@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#fff0f6" />
+    <title>For My Princess ♡</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sparkles" id="sparkles"></div>
+    <main>
+      <section class="screen active" id="welcome">
+        <article class="glass welcome">
+          <div class="heart-float">♡</div>
+          <p class="eyebrow">HEY, MY PRINCESS</p>
+          <h1>Do you know<br />what day it is?</h1>
+
+          <div class="choices">
+            <button id="saturday">Just Saturday <span>☁</span></button
+            ><button class="primary" id="birthday">
+              The birthday of someone special <span>♡</span>
+            </button>
+          </div>
+          <small id="hint">Choose carefully… I might be smiling already.</small>
+        </article>
+        <div class="bottomline">made with a little extra care ♡</div>
+      </section>
+      <section class="screen celebration" id="celebration">
+        <div class="celebrate">
+          <p class="eyebrow pale">TODAY IS ALL ABOUT YOU</p>
+          <div class="cake">🎂</div>
+          <h1>Happy Birthday!</h1>
+          <p>A whole new chapter. A thousand new reasons to smile.</p>
+          <div class="stars">✧　♡　✦　♡　✧</div>
+          <button class="whitebtn" id="enter">
+            Enter your birthday world <span>→</span>
+          </button>
+        </div>
+      </section>
+      <section class="screen" id="note">
+        <div class="section">
+          <small class="step">01 / A LITTLE REMINDER</small>
+          <article class="glass card reveal">
+            <div class="flower">✿</div>
+            <p class="eyebrow">JUST SO YOU KNOW</p>
+            <h2>There is something<br /><em>beautiful</em> about you.</h2>
+            <div class="copy">
+              <p>
+                Your beauty is more than your smile. It lives in your honest
+                heart, your kindness, and your <b>ቅንነት</b>.
+              </p>
+              <p>
+                You have a way of making ordinary moments feel brighter. Never
+                change the lovely things that make you <b>YOU</b>.
+              </p>
+              <p>
+                May 19 bring you joy that stays, memories worth keeping, and
+                every good thing your heart hopes for. ♡
+              </p>
+            </div>
+            <button class="whitebtn" id="galleryGo">
+              Show me the memories →
+            </button>
+          </article>
+        </div>
+      </section>
+      <section class="screen" id="gallery">
+        <div class="section wide">
+          <small class="step">02 / LITTLE MOMENTS, BIG APPRECIATION</small>
+          <div class="galleryhead">
+            <div>
+              <p class="eyebrow">A COLLECTION FOR YOU</p>
+              <h2>A glimpse of<br /><em>what makes you special.</em></h2>
+            </div>
+            <div class="count"><b id="count">01</b><small> / 10</small></div>
+          </div>
+          <div class="gallery">
+            <button class="arrow" id="prev">←</button>
+            <div class="photo">
+              <img
+                id="photo"
+                src="assets/photos/photo1.jpeg"
+                alt="Birthday memory"
+              /><span id="number">01</span>
+            </div>
+            <button class="arrow" id="next">→</button>
+          </div>
+          <div class="caption" id="caption"></div>
+          <div class="dots" id="dots"></div>
+          <div class="galleryfoot">
+            <small>10 little reminders of how lovely you are</small
+            ><button class="btn" id="wishGo">What is Your wish →</button>
+          </div>
+        </div>
+      </section>
+      <section class="screen" id="wish">
+        <div class="section">
+          <small class="step">03 / MAKE A WISH</small>
+          <article class="glass card center reveal">
+            <div class="moon">☾</div>
+            <p class="eyebrow">THE SKY IS LISTENING</p>
+            <h2>If you could wish<br />for <em>one thing...</em></h2>
+            <p class="muted">
+              What would you wish for in this new chapter of your life?
+            </p>
+            <form id="wishForm">
+              <textarea
+                id="wishText"
+                rows="3"
+                maxlength="500"
+                placeholder="Write your birthday wish here..."
+                required
+              ></textarea
+              ><button class="btn" type="submit">
+                Send your wish into the sky ✧
+              </button>
+            </form>
+            <small id="wishStatus"
+              >A little wish, just for the universe. ♡</small
+            ><button class="whitebtn" id="heartGo">
+              There's one more little thing →
+            </button>
+          </article>
+        </div>
+      </section>
+      <section class="screen" id="heart">
+        <div class="section">
+          <small class="step">04 / ONE LAST LITTLE SURPRISE</small>
+          <article class="glass card center reveal">
+            <div class="bigheart">♡<i>✦</i></div>
+            <p class="eyebrow">A NOTE FROM MY HEART</p>
+            <h2>Ready to see<br /><em>what's behind this?</em></h2>
+            <p class="muted">Some things are better felt than explained.</p>
+            <button class="btn" id="openHeart">Open My Heart ♡</button>
+          </article>
+        </div>
+      </section>
+      <section class="screen" id="final">
+        <div class="section">
+          <article class="glass card center reveal finalcard">
+            <div class="stars">✦　♡　✧　♡　✦</div>
+            <p class="eyebrow">A LITTLE TRUTH, JUST FOR YOU</p>
+            <h2>You deserve<br /><em>so much more.</em></h2>
+            <div class="copy finalcopy">
+              <p>
+                You deserve more than this — more than a website, a few
+                pictures, and a handful of words.
+              </p>
+              <p>
+                But this is what I can give you right now: a little world made
+                with my time, effort, and genuine wishes for you.
+              </p>
+              <p>
+                So don't just look at the wishes on this screen. Look at the
+                heart behind them, the thought in every little detail, and the
+                person who wanted to make your day feel special.
+              </p>
+              <p>
+                I hope you can see how unique you are, how deeply you are
+                appreciated, and the special place you have in my world.
+              </p>
+            </div>
+            <div class="signature">Keep shining, My Princess. ♡</div>
+            <button class="whitebtn" id="restart">
+              Replay our little birthday world ↺
+            </button>
+          </article>
+        </div>
+      </section>
+    </main>
+    <audio id="music" loop preload="auto">
+      <source src="assets/birthday.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="music" id="musicLabel">
+      <span>▮▮▮</span> birthday soundtrack
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
