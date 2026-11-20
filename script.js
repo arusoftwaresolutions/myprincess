@@ -20,20 +20,25 @@ function show(id) {
   }
 }
 const music = document.getElementById("music");
+music.preload = "auto";
+music.volume = 0.65;
+music.load();
 document.getElementById("saturday").onclick = () =>
   (document.getElementById("hint").textContent =
     "Hmm… try one more time. Someone wonderful was born today. ♡");
-document.getElementById("birthday").onclick = () => {
-  music.volume = 0.65;
-  music
-    .play()
-    .then(() => document.getElementById("musicLabel").classList.add("show"))
-    .catch(
-      () =>
-        (document.getElementById("hint").textContent =
-          "Add assets/birthday.mp3 to enable the birthday soundtrack. ♡"),
-    );
+document.getElementById("birthday").onclick = async () => {
   show("celebration");
+
+  try {
+    await music.play();
+
+    document.getElementById("musicLabel").classList.add("show");
+  } catch (error) {
+    console.error("Music playback failed:", error);
+
+    document.getElementById("hint").textContent =
+      "The music couldn't start. Please try again. ♡";
+  }
 };
 document.getElementById("enter").onclick = () => show("note");
 document.getElementById("galleryGo").onclick = () => show("gallery");
